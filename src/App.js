@@ -1,6 +1,7 @@
+import Layout from 'components/layout/Layout';
+import Home from 'pages/home/Home';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Layout from './components/layout/Layout';
-import Home from './pages/home/Home';
+import './assets/css/base.css';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 							replace
 							to="/dashboard" />
 					)} />
+
 				<Route
 					path="/dashboard"
 					element={(
