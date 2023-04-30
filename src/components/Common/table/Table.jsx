@@ -25,7 +25,6 @@ const Table = ({ children, headList, originList, setViewList, isAllCheck, onAllC
 		originList,
 		setViewList,
 	});
-
 	return (
 		<TableCpt>
 			<colgroup>
