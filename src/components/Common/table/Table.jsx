@@ -14,9 +14,10 @@ const TableCpt = styled.table`
   box-shadow: 3px 6px 12px rgba(0,0,0,0.1);
 
   th{position:relative; padding:17px 0 18px 32px;text-align:left;font-size:14px;line-height:21px;box-sizing:border-box;}
-  td{position:relative; height:48px;padding:22px 0 21px 32px;text-align:left;box-sizing:border-box;}
+  td{position:relative; height:48px;padding:16px 0 15px 32px;text-align:left;box-sizing:border-box; white-space: pre;}
   th,.tbl_comm td{border-bottom:1px solid rgba(34,34,34,0.1);}
-  tbody tr{border-radius:4px}
+  tbody tr{border-bottom: 1px solid rgba(34,34,34,0.1)}
+  
   tbody tr.new td{background-color:#{$yellow-5};}
 `;
 

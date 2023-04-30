@@ -1,4 +1,3 @@
-import Button from 'components/Common/Button';
 import Table from 'components/Common/table/Table';
 import { MONTHLY_TABLE_HEAD } from 'constant';
 import FormModal from 'pages/home/modal/FormModal';

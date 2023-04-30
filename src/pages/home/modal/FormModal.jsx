@@ -4,7 +4,7 @@ import PaymentListModal from 'components/form/PaymentListModal';
 import { useEffect, useState } from 'react';
 import { useForm, useWatch } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { addList, initOptions } from 'store/dashboardSlice/dashboardSlice';
+import { PAYMENT_TYPE_LIST, PAYMENT_WAY_LIST, addList, initOptions } from 'store/dashboardSlice/dashboardSlice';
 import styled from 'styled-components';
 
 const Container = styled.div``;
@@ -62,33 +62,11 @@ const Input = styled.input`
   width: 100%;
   background-color: inherit;
   border:none;
-  border-bottom: 2px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 5px;
+  background-color:#ECE3D3;
+  box-sizing: border-box;
 `;
-
-const PAYMENT_TYPE_LIST = [
-	{
-		id: '1',
-		text: '분류 선택1',
-	},
-	{
-		id: '2',
-		text: '분류 선택2',
-	},
-	{
-		id: '3',
-		text: '분류 선택3',
-	},
-];
-const PAYMENT_WAY_LIST = [
-	{
-		id: '1',
-		text: '자산 선택1',
-	},
-	{
-		id: '2',
-		text: '자산 선택2',
-	},
-];
 
 const FormModal = ({ onClose }) => {
 	const dispatch = useDispatch();
@@ -140,7 +118,9 @@ const FormModal = ({ onClose }) => {
 	}, []);
 
 	return (
-		<Modal onLayerClose={onClose}>
+		<Modal
+			onLayerClose={onClose}
+			className="form_modal">
 			<button
 				type="button"
 				onClick={onClose}>뒤로</button>

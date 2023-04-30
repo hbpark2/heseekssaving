@@ -21,7 +21,7 @@ padding: 10px;
 const Header = () => (
 	<Container>
 		<Logo>
-      HESEEKSSAVING
+      WESEEKSAVING
 		</Logo>
 	</Container>
 );

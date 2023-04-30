@@ -1,31 +1,31 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const PAYMENT_TYPE_LIST = [
+export const PAYMENT_TYPE_LIST = [
 	{
 		id: '1',
-		text: '선택1',
+		text: '식비 🍱',
 	},
 	{
 		id: '2',
-		text: '선택2',
+		text: '교통/차량 🚗',
 	},
 	{
 		id: '3',
-		text: '선택3',
+		text: '문화 생활 🎬',
+	},
+	{
+		id: '4',
+		text: '자기개발 📚',
 	},
 ];
-const PAYMENT_WAY_LIST = [
+export const PAYMENT_WAY_LIST = [
 	{
 		id: '1',
-		text: '카드',
+		text: '카드 💳',
 	},
 	{
 		id: '2',
-		text: '현금',
-	},
-	{
-		id: '3',
-		text: '선택3',
+		text: '현금 💶',
 	},
 ];
 

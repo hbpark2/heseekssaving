@@ -26,18 +26,19 @@ const Layer = styled.div`
   z-index: 999;
 `;
 
-const BottomModal = ({ children, onLayerClose }) => (
+const Modal = ({ children, onLayerClose, className }) => (
 	<>
-		<Container>
+		<Container className={className || ''}>
 			{children}
 		</Container>
 		<Layer onClick={onLayerClose} />
 	</>
 );
 
-BottomModal.propTypes = {
+Modal.propTypes = {
 	children: PropTypes.node,
 	onLayerClose: PropTypes.func,
+	className: PropTypes.string,
 };
 
-export default BottomModal;
+export default Modal;
